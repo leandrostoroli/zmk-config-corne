@@ -24,10 +24,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp ESC     &trans  &trans  &trans  &trans  &kp TAB    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans
+&kp LSHIFT  &trans  &trans  &trans  &trans  &trans     &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0  &trans
+&kp LCTRL   &trans  &trans  &trans  &trans  &trans     &trans        &trans        &trans        &trans        &trans  &trans
+                            &trans  &trans  &trans     &trans        &trans        &trans
             >;
         };
 
