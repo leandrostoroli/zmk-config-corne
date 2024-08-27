@@ -11,6 +11,15 @@
 &led_strip { chain-length = <27>; };
 
 / {
+    macros {
+        cmdalt: cmdalt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp LEFT_ALT>;
+            label = "CMDALT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -34,10 +43,10 @@
 
         layer_2 {
             bindings = <
-&trans  &kp ESC         &trans  &trans    &trans  &kp TAB         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans  &kp LEFT_SHIFT  &trans  &trans    &trans  &kp LEFT_ALT    &trans            &trans             &trans                &trans                 &trans  &trans
-&trans  &kp LCTRL       &trans  &trans    &trans  &trans          &trans            &trans             &trans                &trans                 &trans  &trans
-                                &kp LGUI  &trans  &kp SPACE       &kp ENTER         &kp BACKSPACE      &trans
+&trans  &kp ESC         &trans  &trans       &trans  &kp TAB         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&trans  &kp LEFT_SHIFT  &trans  &trans       &trans  &kp LEFT_ALT    &kp H             &kp J              &kp K                 &kp L                  &trans  &trans
+&trans  &kp LCTRL       &trans  &bootloader  &trans  &cmdalt         &kp QUESTION      &kp COLON          &trans                &trans                 &trans  &trans
+                                &kp LGUI     &trans  &kp SPACE       &kp ENTER         &kp BACKSPACE      &trans
             >;
         };
     };
