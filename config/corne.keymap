@@ -25,19 +25,19 @@
 
         layer_1 {
             bindings = <
-&trans  &kp ESC         &kp GRAVE     &kp EQUAL             &kp MINUS     &kp TAB         &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4     &kp N5  &trans
-&trans  &kp LEFT_SHIFT  &kp SQT       &kp NON_US_BACKSLASH  &kp ASTRK     &bt BT_CLR      &kp NUMBER_6    &kp N7          &kp N8        &kp N9           &kp N0  &trans
-&trans  &kp LCTRL       &bt BT_SEL 3  &bt BT_SEL 2          &bt BT_SEL 1  &bt BT_SEL 0    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp ESC         &kp GRAVE     &kp EQUAL             &kp MINUS     &kp TAB         &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4     &kp N5      &trans
+&trans  &kp LEFT_SHIFT  &kp SQT       &kp NON_US_BACKSLASH  &kp ASTRK     &kp LEFT_ALT    &kp NUMBER_6    &kp N7          &kp N8        &kp N9           &kp N0      &trans
+&trans  &kp LCTRL       &bt BT_SEL 3  &bt BT_SEL 2          &bt BT_SEL 1  &bt BT_SEL 0    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &bt BT_CLR  &trans
                                       &kp LEFT_COMMAND      &trans        &kp SPACE       &kp ENTER       &kp BACKSPACE   &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp ESC         &trans  &trans    &trans  &kp TAB         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&trans  &kp LEFT_SHIFT  &trans  &trans    &trans  &kp LEFT_ALT    &trans            &trans             &trans                &trans                 &trans  &trans
+&trans  &kp LCTRL       &trans  &trans    &trans  &trans          &trans            &trans             &trans                &trans                 &trans  &trans
+                                &kp LGUI  &trans  &kp SPACE       &kp ENTER         &kp BACKSPACE      &trans
             >;
         };
     };
